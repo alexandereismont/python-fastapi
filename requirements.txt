@@ -1,0 +1,6 @@
+fastapi
+fastapi_utils
+uvicorn
+sqlalchemy
+pytest
+typing-inspect
