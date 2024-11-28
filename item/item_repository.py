@@ -2,6 +2,7 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 
 from conf.db_config import get_db
+from item.item_model import Item
 
 
 class ItemRepository:
@@ -12,4 +13,4 @@ class ItemRepository:
         pass
 
     def get_item(self, item_id):
-        pass
+        return self.db.query(Item).filter(Item.id == item_id).first()
