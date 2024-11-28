@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
+
+[project]
+name = "python-fastaapi"
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+    "setuptools_scm",
+    "fastapi",
+    "fastapi_utils",
+    "uvicorn",
+    "sqlalchemy",
+    "pytest",
+    "typing-inspect",
+]
