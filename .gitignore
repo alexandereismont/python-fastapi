@@ -4,3 +4,6 @@ venv
 .idea
 
 python-fastapi.db
+
+my_project.egg-info
+python_fastapi.egg-info
